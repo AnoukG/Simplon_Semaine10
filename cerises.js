@@ -23,7 +23,7 @@ function afficherMiniCerise() {
 //Div pour animation cerises//
     var div = document.createElement('div');
     div.className += "thumbnail-cerise";
-    div.innerHTML = "<img src=\"images/iconCerise.png\" />";
+    div.innerHTML = "<img src=\"images/IconCerise.png\" />";
 
     document.getElementById("bouton-cerise").appendChild(div);
 
