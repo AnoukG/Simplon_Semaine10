@@ -1,13 +1,34 @@
 //Variables//
 
-var score = document.getElementById('score');
-
+var score = 0;
+var noeudScore = document.getElementById("Score");
 var boutonCerise = document.getElementById('bouton-cerise');
 
 //Score//
 
-boutonCerise.addEventListener("click", function(){
+afficherScore();
+boutonCerise.addEventListener("click", function (event) {
     score++;
     afficherScore();
-    fadeTo(3, 0.5) //opacité du bouton//
+    afficherMiniCerise();
 });
+
+
+function afficherScore() {
+    noeudScore.innerHTML = score;
+}
+
+function afficherMiniCerise() {
+
+//Div pour animation cerises//
+    var div = document.createElement('div');
+    div.className += "thumbnail-cerise";
+    div.innerHTML = "<img src=\"images/iconCerise.png\" />";
+
+    document.getElementById("bouton-cerise").appendChild(div);
+
+    setTimeout(function () {
+        div.remove();
+    }, 900);
+
+}
