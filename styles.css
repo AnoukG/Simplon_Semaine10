@@ -1,0 +1,49 @@
+section {
+  background-image: url("images/FondCerisier.png");
+  background-repeat:no-repeat;
+  background-position:50% 50%;
+  background-size: 60%;
+}
+
+hr {
+  background-color: red;
+  width: 100%;
+  height: 3px;
+}
+
+.row {
+  margin:0px
+}
+
+.col-md-3 {
+  padding:10px;
+}
+
+.Affichage {
+  background-color: red;
+  color:white;
+  text-align: center;
+  border-radius: 10px;
+  font-family: fantasy;
+  font-size: 26px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.col-md-6 {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  position: relative;
+  float: left;
+  padding:10px;
+  min-height: 700px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#bouton-cerise {
+  height: auto;
+  margin: auto;
+}

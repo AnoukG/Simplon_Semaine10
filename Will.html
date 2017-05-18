@@ -1,0 +1,34 @@
+<style>
+    #parentDiv {
+        background-color:red;
+        color:white;
+        padding:10px;
+    }
+</style>
+
+
+<div id="parentDiv">
+    <p>This is the parent div.</p>
+</div>
+
+<div class="divToRemove">
+    <p>This is the div to remove.</p>
+</div>
+
+
+
+<a href="https://getbootstrap.com/components/">Documentation et exemples Bootstrap. Documentation à comprendre</a>
+
+<script>
+    var parent = document.getElementById("parentDiv");
+
+
+    // Append
+    var childParagraph1 = document.createElement('p');
+    childParagraph1.innerHTML = "This is the child paragraph using 'append'.";
+    parent.append(childParagraph1);
+
+    // Prepend
+    var childParagraph2 = document.createElement('p');
+    childParagraph2.innerHTML = "This is the child paragraph using 'prepend'.";
+    parent.prepend(childParagraph2);
