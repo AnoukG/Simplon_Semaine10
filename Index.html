@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Cerises par millier</title>
-  <link rel="shortcut icon" type="image/x-icon" href="images/IconCerise.png" />
-  <meta charset="utf-8"/>
-    <link href="bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"/>
+
+    <meta charset="utf-8"/>
+
+    <!--BOOTSTRAP CSS -->
+    <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+
+    <!--FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/IconCerise.png"/>
+
+    <title>Cerises par millier</title>
 </head>
 
 <body>
-    <header>
-      <hr>
-    </header>
+<header>
+    <!-- <hr> En CSS ici -->
+</header>
 
-    <section>
-      <div class="container-fluid">
+<main>
+
+    <!-- CONTAINER -->
+    <div class="container-fluid">
         <div class="row">
 
-          <div class="col-md-3">
-            <div class="Affichage">
-              <p id="Score"></p>
-            </div>
-          </div>
 
-          <div class="col-md-6">
-            <div id="bouton-cerise">
-              <img src="images/IconCerise.png" width="50%" class="img-responsive center-block"/>
-            </div>
+            <!-- LEFT COLUMN -->
+            <div class="col-md-3">
+                <div class="row">
 
-          </div>
+                    <div class="score">
+                        <h1 class="titreScore">Cerises collectées dans votre panier :</h1>
+                        <p id="nombreScore"></p>
+                    </div>
 
-          <div class="col-md-3">
-          </div>
+                </div><!--/END ROW -->
+            </div> <!--/END LEFT COLUMN -->
 
-        </div>
-      </div>
-    </section>
+            <!-- MIDDLE COLUMN -->
+            <div class="col-md-6">
+                <div class="row">
 
-    <footer>
-      <hr>
-    </footer>
+                    <div id="bouton-cerise">
+                        <img src="assets/images/IconCerise.png" width="50%" class="img-responsive center-block"/>
+                    </div>
 
-<script src="cerises.js" type="text/javascript" charset="utf-8" async defer></script>
+                </div><!--/END ROW-->
+            </div><!--END MIDDLE COLUMN-->
 
+            <!--RIGHT COLUMN -->
+            <div class="col-md-3">
+
+                <div class="row">
+                    <h1>Recruter des aides :</h1>
+                </div><!--/END ROW-->
+
+                <div class="row">
+                    <button id="multiplicateur"></button>
+                </div><!--/END ROW-->
+
+                <div class="row">
+                    <button id="auto-click"></button>
+                </div><!--/END ROW-->
+
+            </div><!--/END RIGHT COLUMN -->
+
+        </div><!--/END ROW-->
+    </div><!--/END CONTAINER-->
+
+</main>
+
+<footer>
+    <!-- <hr> En CSS -->
+</footer>
+
+<!-- Javascript -->
+<script type="text/javascript" src="assets/js/cerises.js" ></script>
 </body>
 
 </html>
